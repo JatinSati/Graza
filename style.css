@@ -46,11 +46,16 @@ body{
 
 .slider{
     position: relative;
+    height: 112vh;
+    width: 50vw;
+}
+
+.slider .list{
+    overflow: hidden;
 }
 
 .slider .list .items{
     position: absolute;
-    overflow: hidden;
 }
 
 .slider .list .items.active{
@@ -58,10 +63,10 @@ body{
     z-index: 10;
 }
 
-#img1{
+.slider .list .img1{
     height: 112vh;
     width: 50vw;
-    overflow: hidden;
+    object-fit: cover;
 }
 
 .thumbnail{
@@ -75,7 +80,7 @@ body{
     margin-top: 40vh;
 }
 
-.img1{
+.thumbnail .img1{
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -244,8 +249,9 @@ body{
     left: 0;
 }
 
-#gift{
-    margin-left: 17vw;
+.gift{
+    display: flex;
+    justify-content: center;
 }
 
 #desc{
@@ -292,7 +298,6 @@ body{
         width: 100%;
     }
     #right-container{
-        margin-top: 160vh;
         height: 600%;
         width: 100%;
     }
@@ -310,35 +315,57 @@ body{
         height: 600%;
         width: 100%;
     }
-    #img1{
+    .slider{
+        overflow: hidden;
         width: 100vw;
-        height: 150vh;
+        height: 110vh;
+    }
+    .slider .list .items .img1{
+        width: 100vw;
+        height: 100vh;
         overflow: hidden;
     }
     .thumbnail{
         display: flex;
         flex-direction: row;
         gap: 4px;
-        top: 100vh;
+        top: 50vh;
         left: calc(45%);
     }
-    .img1{
+    .thumbnail .img1{
         height: 10px;
         width: 10px;
         filter: brightness(0.5) saturate(0%);
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px){
     #billing{
         width: 100vw;
         border-radius: 0;
     }
-   
     #nav-title{
         width: 34vw;
     }
     #desc-content{
         width: 100vw;
     }
+    .slider{
+        overflow: hidden;
+        width: 100vw;
+        height: 70vh;
+    }
+    .slider .list .items .img1{
+        width: 100vw;
+        height: 60vh;
+        overflow: hidden;
+    }
+    .thumbnail{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        top: 22vh;
+        left: calc(40%);
+    }
 }
+
