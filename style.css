@@ -163,12 +163,24 @@ body{
 #Set{
     display: grid;
     align-items: center;
-    height: 10vh;
+    height: 11vh;
     width: 45%;
     border-style: solid;
     border-radius: 10px;
     border-color: black;
     background-color: rgb(250, 243, 235);
+}
+
+#set-offer{
+    height: 6vh;
+    top: 0;
+    color: rgb(250, 243, 235);
+    background-color: rgb(48, 48, 3);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #Set:hover {
@@ -391,6 +403,9 @@ body{
     }
     #button-set{
         flex-direction: column;
+    }
+    #set-offer{
+        height: 5vh;
     }
     #Set{
         width: 90%;
