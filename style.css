@@ -302,7 +302,7 @@ body{
     border: 2px solid rgb(48, 48, 3);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    width: 14vw;
+    width: 13.5vw;
     display: flex;
     justify-content: center;
 }
@@ -316,7 +316,7 @@ body{
 #desc-content{
     border: 2px solid rgb(48, 48, 3);
     height: 15vh;
-    width: 42vw;
+    width: 40.5vw;
     padding: 1vw;
     display: grid;
 }
