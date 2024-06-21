@@ -136,8 +136,8 @@ body{
     border-width: thin;
     border-radius: 1rem;
     background-color: #FFF3EC;
-    height: 50vh;
-    width: 40vw;
+    height: 53vh;
+    width: 33vw;
 }
 
 #quantity{
@@ -163,7 +163,7 @@ body{
 #Set{
     display: grid;
     align-items: center;
-    height: 11vh;
+    height: 12vh;
     width: 45%;
     border-style: solid;
     border-radius: 10px;
@@ -172,7 +172,7 @@ body{
 }
 
 #set-offer{
-    height: 6vh;
+    height: 6.5vh;
     top: 0;
     color: rgb(250, 243, 235);
     background-color: rgb(48, 48, 3);
@@ -302,7 +302,7 @@ body{
     border: 2px solid rgb(48, 48, 3);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    width: 13.5vw;
+    width: 11vw;
     display: flex;
     justify-content: center;
 }
@@ -316,7 +316,9 @@ body{
 #desc-content{
     border: 2px solid rgb(48, 48, 3);
     height: 15vh;
-    width: 40.5vw;
+    width: 33vw;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     padding: 1vw;
     display: grid;
 }
@@ -358,7 +360,21 @@ body{
     .slider .list .items .img1{
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
+        scroll-snap-align: start;
+    }
+    .slider .list{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    }
+    .slider .list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider .list .items{
+        position: static;
     }
     .thumbnail{
         display: flex;
@@ -386,7 +402,7 @@ body{
         width: 100vw;
     }
     .slider{
-        overflow: hidden;
+        display: flex;
         width: 100vw;
         height: 65vh;
     }
