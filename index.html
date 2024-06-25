@@ -7,6 +7,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+    <link href="https://db.onlinewebfonts.com/c/2e915032b738218b849bda311ed3a32d?family=GT+Alpina+Typewriter+Regular" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
@@ -91,7 +92,7 @@
                 <div id="quantity">Quantity</div>
                 <div id="buttons">
                     <div id="button-set">
-                        <button id="Set"><div id="set-offer">+10% Off</div><div><h3>1</h3></div><div>Set</div>
+                        <button id="Set"><div id="set-offer"><h4>+10% Off</h4></div><div><h3>1</h3></div><div>Set</div>
                         </button>
                         <button id="Set"><div id="set-offer"><h5>Free Shipping!</h5><h5>+14% Off</h5></div><div><h3>2</h3></div><div>Set</div>
                         </button>
@@ -107,7 +108,7 @@
                 <div id="bill-details">
                   <label class="box">
                        <input type="checkbox" checked="checked" class="checkmark">
-                       <h5>One Time Purchase</h5>
+                       One Time Purchase
                   </label>
                   <h5 id="amount">$37</h5>
                 </div>
@@ -115,11 +116,23 @@
                 <div id="bill-details">
                     <label class="box">
                          <input type="checkbox" checked="checked" class="checkmark">
-                         <h5>Subscribe & Save</h5>
+                         Subscribe & Save
                     </label>
                     <h5 id="amount"><s id="strike">$37</s> $33.30</h5>
-                  </div>
-                <button id="freq"><h3>Frequency: Every 1 Month</h3><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="dropdown">
+                    <div class="select"> 
+                      <div>Frequency:</div>
+                      <span class="selected">Every 1 Month</span>
+                    </div>
+                    <div><i id="icon" class="fa-solid fa-chevron-down"></i></div>
+                    <ul class="menu">
+                      <li class="hidden">Every 1 Month</li>
+                      <li>Every 2 Months</li>
+                      <li>Every 3 Months</li>
+                    </ul>
+                </div>
+              
                 <hr id="line2"/>
                 <div id="order">
                     <button id="above"><h3>Subscribe - $33.30</h3></button>
@@ -129,15 +142,23 @@
                     <h4 id="gift"><u>Send as a gift</u></h4>
                 </div>
             </div>
-            <div id="desc">
-                <div id="nav">
-                    <h3 id="nav-title">DETAILS</h3>
-                    <h3 id="nav-title">HARVEST</h3>
-                    <h3 id="nav-title">USE CASES</h3>
+            <div class="desc">
+                <div class="nav">
+                    <button class="nav-title" data-nav="details"><h3>DETAILS</h3></button>
+                    <button class="nav-title" data-nav="harvest"><h3>HARVEST</h3></button>
+                    <button class="nav-title" data-nav="use case"><h3>USE CASES</h3></button>
                 </div>
-                <div id="desc-content">
+                <div id="details" class="desc-content">
                     <h3><b>DRIZZLE: 500ML</b></h3>
-                    <h4>Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, not heating.</h4>
+                    Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, not heating.
+                </div>
+                <div id="harvest" class="desc-content">
+                    <h3><b>DRIZZLE:</b></h3>
+                    Harvested in October, before the olives have ripened fully. Picked by hand because young olives need a firm yank to loosen up.
+                </div>
+                <div id="use case" class="desc-content">
+                    <h3><b>DRIZZLE:</b></h3>
+                    A little Drizzle goes a long way! Put it on your ice cream or popcorn, whip up a pesto or salad dressing, or drink it straight from a spoon (we won’t tell).
                 </div>
             </div>
            
