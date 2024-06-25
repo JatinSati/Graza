@@ -203,6 +203,7 @@ body{
 .box{
     display: flex;
     gap: 1vw;
+    cursor: pointer;
 }
 
 .checkmark{
@@ -227,6 +228,7 @@ body{
 #bill-details{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 #amount{
@@ -242,23 +244,25 @@ body{
     width: 90%;
     height: 6.5vh;
     margin-left: 2vw;
-    padding: 10px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.4s;
     font-family: "GT Alpina Typewriter Regular";
 }
 .select{
     display: flex;
     margin-left: 10px;
+    margin-top: 0.4vh;
     gap: 10px;
     justify-content: space-between;
 }
 #icon{
     transition: 0.3s;
+    margin-top: 0.5vh;
 }
 .icon-rotate{
     transform: rotate(180deg);
@@ -269,6 +273,7 @@ body{
     position: absolute;
     opacity: 0;
     display: none;
+    gap: 10%;
     margin-left: 7.9vw;
 }
 .menu li{

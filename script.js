@@ -84,3 +84,4 @@ var tabButtons = document.querySelectorAll(".nav-title");
     }
 
     document.querySelector(".nav-title").click();
+
